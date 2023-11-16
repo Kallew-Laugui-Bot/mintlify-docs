@@ -33,19 +33,9 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://docs.glcloud.app"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Join our Discord",
+      "icon": "discord",
+      "url": "https://discord.glcloud.app"
     }
   ],
   "navigation": [
@@ -53,28 +43,30 @@
       "group": "Get Started",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        "glcloud.app file"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Languages",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation"
+        "articles/getting-started-with-nodejs",
+        "articles/getting-started-with-python",
+        "articles/getting-started-with-java",
+        "articles/getting-started-with-elixir",
+        "articles/getting-started-with-rust",
+        "articles/getting-started-with-php",
+        "articles/getting-started-with-go"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "API Reference",
       "pages": [
-        "api-reference/introduction"
+        "api-reference/authentication",
+        "api-reference/limitations-and-restrictions"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Endpoints",
       "pages": [
         "api-reference/endpoint/get",
         "api-reference/endpoint/create",
@@ -85,6 +77,7 @@
   "footerSocials": {
     "twitter": "https://twitter.com/mintlify",
     "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "linkedin": "https://www.linkedin.com/company/mintsearch",
+    "discord": "https://discord.glcloud.app"
   }
 }
