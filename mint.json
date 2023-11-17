@@ -1,29 +1,29 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "GL Cloud",
+  "name": "Starter Kit",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0B0E13",
-    "light": "#F0F0F0",
-    "dark": "#0B0E13",
+    "primary": "#0D9373",
+    "light": "#07C983",
+    "dark": "#0D9373",
     "anchors": {
-      "from": "#0B0E13",
+      "from": "#0D9373",
       "to": "#07C983"
     }
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "glcloud@lauguibot.com"
+      "url": "mailto:hi@mintlify.com"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://glcloud.app/dashboard"
+    "url": "https://dashboard.mintlify.com"
   },
   "tabs": [
     {
@@ -33,9 +33,19 @@
   ],
   "anchors": [
     {
-      "name": "Join our Discord",
-      "icon": "discord",
-      "url": "https://discord.glcloud.app"
+      "name": "Documentation",
+      "icon": "book-open-cover",
+      "url": "https://mintlify.com/docs"
+    },
+    {
+      "name": "Community",
+      "icon": "slack",
+      "url": "https://mintlify.com/community"
+    },
+    {
+      "name": "Blog",
+      "icon": "newspaper",
+      "url": "https://mintlify.com/blog"
     }
   ],
   "navigation": [
@@ -43,30 +53,28 @@
       "group": "Get Started",
       "pages": [
         "introduction",
-        "glcloud.app file"
+        "quickstart",
+        "development"
       ]
     },
     {
-      "group": "Languages",
+      "group": "Essentials",
       "pages": [
-        "articles/getting-started-with-nodejs",
-        "articles/getting-started-with-python",
-        "articles/getting-started-with-java",
-        "articles/getting-started-with-elixir",
-        "articles/getting-started-with-rust",
-        "articles/getting-started-with-php",
-        "articles/getting-started-with-go"
+        "essentials/markdown",
+        "essentials/code",
+        "essentials/images",
+        "essentials/settings",
+        "essentials/navigation"
       ]
     },
     {
-      "group": "API Reference",
+      "group": "API Documentation",
       "pages": [
-        "api-reference/authentication",
-        "api-reference/limitations-and-restrictions"
+        "api-reference/introduction"
       ]
     },
     {
-      "group": "Endpoints",
+      "group": "Endpoint Examples",
       "pages": [
         "api-reference/endpoint/get",
         "api-reference/endpoint/create",
@@ -77,7 +85,6 @@
   "footerSocials": {
     "twitter": "https://twitter.com/mintlify",
     "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch",
-    "discord": "https://discord.glcloud.app"
+    "linkedin": "https://www.linkedin.com/company/mintsearch"
   }
 }
