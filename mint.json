@@ -1,5 +1,5 @@
 {
-  "$schema": "https://mintlify.com/schema.json1",
+  "$schema": "https://mintlify.com/schema.json",
   "name": "GL Cloud",
   "logo": {
     "dark": "/logo/dark.svg",
