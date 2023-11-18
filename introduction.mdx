@@ -9,40 +9,22 @@ This tutorial will have you deploying a Node.js app to GL Cloud in minutes.
 
 The tutorial assumes that you have a [GL Cloud account](https://glcloud.app/login), and that you have [Node.js](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/package/npm) installed locally.
 
-
 ## Required Files
 
-> index.js or index.ts (Example of main file).
-> package.json (dependency file).
-> squarecloud.app (file that contains the Square Cloud configuration).
+- index.js or index.ts (Example of main file).<br />
+- package.json (dependency file).<br />
+- GLcloud.app (file that contains the GL Cloud configuration).
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/components/accordion"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/showcase"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+## Preparing Files for Upload
+
+Before hosting your project on GL Cloud, you must first have the files of your project properly configured, so that you can host it later.
+
+It is recommended to **delete** the <code>node_modules</code> & **ffmpeg** folder, **package-lock.json** and **.npmrc** file, if it exists in your project.
+
+Create your [glcloud.app]() configuration file.
+
+After the files of your project are ready (and the unnecessary files deleted), just zip them in **.zip** format before uploading to GL Cloud.
+
+​
+## Uploading Files to GL Cloud
+After preparing your project files, you can now upload them to GL Cloud and host your project. Access the [GL Cloud Dashboard](https://glcloud.app/dashboard) and upload your project files.
