@@ -1,0 +1,84 @@
+---
+title: "Commit and Upload"
+description: "In this section you will learn how to make commits and uploads using the Client, Application and CLI."
+---
+
+[Client]: ../user_guide/client
+[Application]: ../user_guide/client#application
+
+You can make commits and uploads using Client or Application. You
+just need a `glcloud.File` object and pass the path where your
+zip file is.
+
+## Making a commit
+
+<Tabs>
+    <Tab title="Using Client">
+    ````python
+    import glcloud as gl
+
+    client = gl.Client('API_KEY')
+
+    async def example():
+        file = gl.File('path/to/you/file.zip')
+        await client.commit(file=file, app_id='application_id')
+    ````
+    </Tab>
+
+    <Tab title="Using Application">
+    ````python
+    import glcloud as gl
+
+    client = gl.Client('API_KEY')
+
+    async def example():
+        app = await client.app(app_id='application_id')
+        file = gl.File('path/to/you/file.zip')
+        await app.commit(file=file)
+    ````
+    </Tab>
+    <Tab title="Using CLI">
+    ````bash
+    glcloud app <APP-ID> commit <FILE>
+    ````
+    </Tab>
+</Tabs>
+
+## Making a upload
+
+To upload an application, you only use the [Client] and the CLI.
+
+<Tabs>
+    <Tab title="Using Client">
+    ````python
+    import glcloud as gl
+
+    client = gl.Client(...)
+
+    async def example():
+        file = gl.File('path/to/you/file.zip')
+        await client.upload_app(file=file)
+    ````
+    </Tab>
+    <Tab title="Using CLI">
+    ````bash
+    glcloud upload <ZIP>
+    ````
+    </Tab>
+</Tabs>
+
+**Remember that to upload an application you need a zip that contains (at least) the following files:**:
+
+- Main file: responsible for starting your application
+- Dependencies file: contains information about which dependencies are necessary
+- Configuration file (glcloud.app): a configuration file specifying the
+name,
+description, main file name, version, etc. To learn more about the
+configuration file, take a look at this [guide](https://docs.glcloud.app/articles/how-to-create-your-glcloud-configuration-file)
+
+<Tip>
+    For your convenience, a function has been added to create this configuration file:
+    `glcloud.create_config_file`.
+    
+    You can also create the configuration file using the command line `glcloud create_config_file`.
+</Tip>

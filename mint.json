@@ -1,0 +1,213 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "GL Cloud",
+  "favicon": "/favicon.png",
+  "colors": {
+    "primary": "#2563eb",
+    "light": "#2563eb",
+    "dark": "#2563eb",
+    "background": {
+      "light": "#f0f0f0",
+      "dark": "#0B0E13"
+    }
+  },
+  "modeToggle": {
+    "default": "dark"
+  },
+  "topbarCtaButton": {
+    "name": "Dashboard",
+    "url": "https://glcloud.app/dashboard"
+  },
+  "anchors": [
+    {
+      "name": "Join our Discord",
+      "icon": "discord",
+      "url": "https://discord.glcloud.app"
+    },
+    {
+      "name": "Follow us on Twitter",
+      "icon": "twitter",
+      "url": "https://twitter.com/glcloudofc"
+    },
+    {
+      "name": "Follow us on Instagram",
+      "icon": "instagram",
+      "url": "https://instagram.com/glcloudofc"
+    },
+    {
+      "name": "Contribute on GitHub",
+      "icon": "github",
+      "url": "https://go.glcloud.app/github"
+    }
+  ],
+  "tabs": [
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    },
+    {
+      "name": "FAQs",
+      "url": "faqs"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "introduction",
+        "articles/how-to-create-your-glcloud-configuration-file"
+      ]
+    },
+    {
+      "group": "Languages",
+      "pages": [
+        "articles/getting-started-with-nodejs",
+        {
+          "group": "Python",
+          "pages": [
+            "articles/getting-started-with-python",
+            "articles/how-to-create-your-requirements"
+          ]
+        },
+        "articles/getting-started-with-java",
+        "articles/getting-started-with-elixir",
+        "articles/getting-started-with-rust",
+        "articles/getting-started-with-php",
+        "articles/getting-started-with-go"
+      ]
+    },
+    {
+      "group": "Articles",
+      "pages": [
+        "articles/how-to-set-up-git-integration",
+        "articles/how-to-set-up-your-domain",
+        "articles/how-to-deploy-your-website",
+        "articles/how-to-create-your-lavalink-server"
+      ]
+    },
+    {
+      "group": "Platform",
+      "pages": [
+        "platform/overview",
+        "platform/limitations-and-restrictions"
+      ]
+    },
+    {
+      "group": "Company",
+      "pages": ["company/brand", "company/legal", "company/support"]
+    },
+    {
+      "group": "API Reference",
+      "pages": [
+        "api-reference/authentication",
+        "api-reference/limitations-and-restrictions"
+      ]
+    },
+    {
+      "group": "Endpoints",
+      "pages": [
+        {
+          "group": "No auth required",
+          "pages": ["api-reference/endpoint/service/statistics"]
+        },
+        {
+          "group": "User",
+          "pages": ["api-reference/endpoint/user/info"]
+        },
+        {
+          "group": "Application",
+          "pages": [
+            "api-reference/endpoint/apps/info",
+            "api-reference/endpoint/apps/status",
+            "api-reference/endpoint/apps/status-all",
+            "api-reference/endpoint/apps/logs",
+            "api-reference/endpoint/apps/start",
+            "api-reference/endpoint/apps/restart",
+            "api-reference/endpoint/apps/stop",
+            "api-reference/endpoint/apps/backup",
+            "api-reference/endpoint/apps/commit",
+            "api-reference/endpoint/apps/delete",
+            "api-reference/endpoint/apps/upload"
+          ]
+        },
+        {
+          "group": "Application - File Manager",
+          "pages": [
+            "api-reference/endpoint/apps/filemanager/list",
+            "api-reference/endpoint/apps/filemanager/read",
+            "api-reference/endpoint/apps/filemanager/create",
+            "api-reference/endpoint/apps/filemanager/delete"
+          ]
+        },
+        {
+          "group": "Application - Deploy",
+          "pages": [
+            "api-reference/endpoint/apps/deploy/list",
+            "api-reference/endpoint/apps/deploy/webhooks"
+          ]
+        },
+        {
+          "group": "Application - Network",
+          "pages": [
+            "api-reference/endpoint/apps/network/custom",
+            "api-reference/endpoint/apps/network/analytics"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "SDKs",
+      "pages": ["sdks/introduction"]
+    },
+    {
+      "group": "Python SDK",
+      "pages": [
+        "sdks/py/client",
+        "sdks/py/commit_and_upload",
+        "sdks/py/managing_application",
+        "sdks/py/managing_files",
+        {
+          "group": "Advanced Guide",
+          "pages": [
+            "sdks/py/advanced/app_cache",
+            "sdks/py/advanced/listeners",
+            "sdks/py/storing_your_token"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "FAQs",
+      "pages": [
+        "faqs/whitelist-mongodb",
+        "faqs/using-autorestart-in-your-glcloud-application",
+        "faqs/automatic-deletion-files-when-deploying-an-application-to-glcloud"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "website": "https://glcloud.app",
+    "discord": "https://discord.glcloud.app",
+    "instagram": "https://instagram.com/glcloudofc",
+    "twitter": "https://twitter.com/glcloudofc",
+    "linkedin": "https://linkedin.com/company/glcloud",
+    "github": "https://go.glcloud.app/github"
+  },
+  "backgroundImage": "/background.png",
+  "api": {
+    "auth": {
+      "method": "key",
+      "name": "Authorization"
+    }
+  },
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-8NTENKCHRS"
+    }
+  },
+  "feedback": {
+    "thumbsRating": true,
+    "raiseIssue": true,
+    "suggestEdit": true
+  }
+}
