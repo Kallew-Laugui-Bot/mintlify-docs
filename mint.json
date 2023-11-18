@@ -5,7 +5,7 @@
     "dark": "/logo/logo_sem_fundo_cloud.png",
     "light": "/logo/logo_sem_fundo_cloud.png"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/log/logo_sem_fundo_cloud.png",
   "colors": {
     "primary": "#2563eb",
     "light": "#2563eb",
@@ -86,5 +86,4 @@
     "github": "https://github.com/mintlify",
     "linkedin": "https://www.linkedin.com/company/mintsearch"
   }
-  
 }
